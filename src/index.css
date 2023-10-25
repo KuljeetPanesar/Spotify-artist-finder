@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+body {
+  margin: 0;
+  font-family: "Wix Madefor Display", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  margin: 5%;
+  font-size: 70px;
+  font-family: "Sigmar", sans-serif;
+}
+
+#login {
+  background-color: rgb(120, 217, 120);
+  padding: 10px, 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 5px solid transparent;
+}
+
+a {
+  text-decoration: none;
+  color: darkslategrey;
+  font-weight: 500;
+  transition: ease-in 0.3s;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+#logout {
+  background-color: lightcoral;
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: ease-in 0.3s;
+}
+
+#logout:hover {
+  background-color: rgb(151, 26, 26);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+#search-bar,
+#search-button {
+  margin-left: 5px;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  -webkit-appearance: none;
+}
+
+#search-bar {
+  border: 1px solid lightgray;
+}
+
+#search-button {
+  background-color: darkgray;
+  border: 1px solid lightgray;
+  transition: ease-in 0.3s;
+}
+
+#search-button:hover {
+  background-color: #cfcfcf;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+.dots-7 {
+  width: 60px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(circle closest-side, #919191 90%, #91919100);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 100%;
+  animation: d7 1s infinite linear;
+}
+@keyframes d7 {
+  33% {
+    background-size: calc(100% / 3) 0%, calc(100% / 3) 100%, calc(100% / 3) 100%;
+  }
+  50% {
+    background-size: calc(100% / 3) 100%, calc(100% / 3) 0%, calc(100% / 3) 100%;
+  }
+  66% {
+    background-size: calc(100% / 3) 100%, calc(100% / 3) 100%, calc(100% / 3) 0%;
+  }
+}
+
+/* .artists-section {
+  grid to display columns of results
+} */
+
+.divider {
+  margin: 20px;
+}
+
+.artist-name {
+  font-size: 20px;
+}
